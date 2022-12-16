@@ -1,0 +1,21 @@
+<h1>Index</h1> 
+
+<table border="1" cellpadding="50">
+<tr>
+    <th>Nama</th>
+    <th>A</th>
+    <th>B</th>
+    <th>C</th>
+    <th>urutan</th>
+</tr>
+<% @articles.each do |table|%>
+<tr>
+    <td><%= table.nama%></td>
+    <td><%= table.a%></td>
+    <td><%= table.b%></td>
+    <td><%= table.c%></td>
+    <td><%= table.urutan%></td>
+</tr>
+<% end %>
+</table>
+<p><%= link_to "New Data", new_article_path %></p>
